@@ -91,7 +91,7 @@ void SGClient::sendSensorData(sensor_data &sensorData) {
 }
 
 void SGClient::sendImageCapture(camera_fb_t* image, sensor_data &sensorData) {
-  sendSensorData(sensorData); // Record sensor data
+  // sendSensorData(sensorData); // Record sensor data
   // sendLogEvent("sendImageCapture needs to be coded");
   if (image->len) {
     Serial.println("> uploading image....");
